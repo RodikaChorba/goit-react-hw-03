@@ -5,14 +5,8 @@ const Contact = ({ name, number, onDeleteContact, id }) => {
   return (
     <li className={css.item}>
       <div className={css.userData}>
-        <p className={css.line}>
-          <IoMdPerson />
-          {name}
-        </p>
-        <p className={css.line}>
-          <FaPhone />
-          {number}
-        </p>
+        <p className={css.line}>{name}</p>
+        <p className={css.line}>{number}</p>
       </div>
       <button
         className={css.button}
